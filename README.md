@@ -47,13 +47,27 @@ Management wants to:
 - **Products Table:** Stores route catalog information including route name and category.  
 - **Transactions Table:** Stores each ticket sale with customer ID, product ID, sale date, and amount.
 
-**Screenshots:** See /screenshots/schema_creation/
+**Screenshots:**### Table Creation
+![Customers Table Created](screenshots/table/cutomer_table.png)
+### Table Creation
+![products Table Created](screenshots/table/products_table.png)
+### Table Creation
+![transaction Table Created](screenshots/table/transa.table.png)
+         
 
 - Customers: 10 sample customers across different Rwandan regions.  
 - Products: 6-8 Ritco bus routes (e.g., Kigali-Huye, Kigali-Musanze, Kigali-Rubavu).  
 - Transactions: 15+ transactions linking customers to routes with dates and ticket amounts.
 
-**Screenshots:** See /screenshots/data_insertion/
+**Screenshots:**### Sample Data
+![Customers Sample Data](screenshots/table/cutomer_data.png)
+### Sample Data
+![product Sample Data](screenshots/table/products_data.png)
+### Sample Data
+![transaction Sample Data](screenshots/table/transa.data.png)
+
+
+
 
 **ER Diagram Placeholder:** ![ER Diagram](screenshots)
 
@@ -62,13 +76,13 @@ Management wants to:
 
 ### *Ranking Function:* 
 I ranked the Top N Routes by Revenue per Region and calculated total revenue per route and ranked them by region and quarter.
-![Ranking function results](screenshots)
+![Ranking function results](screenshots/queries/ranking2-funct.png)
 **Interpretation:**
 The top routes by total revenue per region are identified. RANK() shows positions with gaps for ties, DENSE_RANK() avoids gaps, and ROW_NUMBER() uniquely numbers each route within its region and quarter.
 
 ### *Aggregate Function:* 
 Running total of revenue by month and 3-month moving averages
-![Aggregate function results](screenshots)
+![Aggregate function results](screenshots/queries/aggregate-function.png)
 **Interpretation:** 
 
 -running_total: Shows cumulative revenue growth month by month.
@@ -79,14 +93,14 @@ Running total of revenue by month and 3-month moving averages
 
 ### *Navigation Function:* 
 #### LAG()
-![Navigation (lag) function results](screenshots)
+![Navigation (lag) function results](screenshots/queries/navigation-funct.png)
 **Interpretation:** 
 
 -Shows the current month's revenue and the previous month's revenue.
 
 -Helps calculate growth percentages and identify seasonal patterns for bus scheduling.
 #### LEAD()
-![Navigation (lead) function results](screenshots)
+![Navigation (lead) function results](screenshots/queries/navigation_lead_output.png)
 **Interpretation:** 
 -Shows current revenue and the next month's revenue for forecasting.
 
@@ -94,7 +108,7 @@ Running total of revenue by month and 3-month moving averages
 
 ### *Distribution Function:* 
 #### NTILE()
-![Distribution (NTILE) function results](screenshots)
+![Distribution (NTILE) function results](screenshots/queries/distribution-function.png)
 **Interpretation:** 
 -Divides customers into 4 spending groups based on total ticket purchases.
 
@@ -102,7 +116,7 @@ Running total of revenue by month and 3-month moving averages
 
 -Helps design targeted loyalty programs and marketing campaigns.
 #### CUME_DIST()
-![Distribution (CUME_DIST) function results](screenshots)
+![Distribution (CUME_DIST) function results](screenshots/queries/distribution_cumedist_output.png)
 **Interpretation:** 
 -Shows the cumulative distribution of customer spending.
 
