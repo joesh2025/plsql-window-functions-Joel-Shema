@@ -99,12 +99,6 @@ Running total of revenue by month and 3-month moving averages
 -Shows the current month's revenue and the previous month's revenue.
 
 -Helps calculate growth percentages and identify seasonal patterns for bus scheduling.
-#### LEAD()
-![Navigation (lead) function results](screenshots/queries/navigation_lead_output.png)
-**Interpretation:** 
--Shows current revenue and the next month's revenue for forecasting.
-
--Useful for capacity planning and resource allocation.
 
 ### *Distribution Function:* 
 #### NTILE()
@@ -115,14 +109,6 @@ Running total of revenue by month and 3-month moving averages
 -Quartile 1 = top spenders, Quartile 4 = occasional travelers.
 
 -Helps design targeted loyalty programs and marketing campaigns.
-#### CUME_DIST()
-![Distribution (CUME_DIST) function results](screenshots/queries/distribution_cumedist_output.png)
-**Interpretation:** 
--Shows the cumulative distribution of customer spending.
-
--Highest-spending customers have lower CUME_DIST values.
-
--Useful for identifying the top percentage of valuable customers.
 
 =====================================================================
 
