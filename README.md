@@ -68,9 +68,6 @@ Management wants to:
 
 
 
-
-**ER Diagram Placeholder:** ![ER Diagram](screenshots)
-
 =======================================================================
 ## 📈 4. Window Functions
 
